@@ -62,10 +62,17 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  
+
 }
 
 .logo:hover {
   cursor: default;
+  color: rgb(204, 153, 129);
+  opacity: 0.15s;
+
+  
+
 }
 
 /* Hamburger menu */
@@ -94,11 +101,17 @@ a:hover {
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
+.color-container:hover {
+  background-color:rgb(255, 0, 98);
+  width: 200%;
+  height: 2px;
+}
+
 
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0%;
+  left: -50px;
   background-color: white;
   width: fit-content;
   max-height: 0;
@@ -118,14 +131,17 @@ a:hover {
 
 .menu-links li {
   list-style: none;
+  
 }
 
 .menu-links.open {
   max-height: 300px;
+  
+  
 }
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg); translate(10px, 5px);
+  transform: rotate(45deg) translate(10px , 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -133,7 +149,7 @@ a:hover {
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg); translate(10px, -5px);
+  transform: rotate(-45deg) translate(10px, -5px) ;
 }
 
 .hamburger-icon span:first-child {
